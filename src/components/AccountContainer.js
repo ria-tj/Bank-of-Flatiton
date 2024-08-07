@@ -8,7 +8,7 @@ function AccountContainer() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:8001/transactions")
+    fetch("https://fake-server-render-v2x1.onrender.com/transactions")
       .then(response => response.json())
       .then(data => setTransactions(data));
   }, []);

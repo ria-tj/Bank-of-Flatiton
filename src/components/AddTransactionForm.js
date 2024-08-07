@@ -17,7 +17,7 @@ function AddTransactionForm({ handleAddTransaction }) {
 
   const handleSubmit = e => {
     e.preventDefault();
-    fetch("http://localhost:8001/transactions", {
+    fetch("https://fake-server-render-v2x1.onrender.com/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
